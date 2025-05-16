@@ -2,13 +2,16 @@ import os
 print('Olá, seja bem-vindo à calculadora de Índice de Massa Corporal (IMC)')
 
 while True:
-    altura = input('Digite sua altura em centímetros: ')
+    altura = input('Digite sua altura em metros ou centímeros: ')
     peso = input('Digite seu peso em kilogramas: ')
     
     try:
         altura_float = float(altura)
         peso_float = float(peso)
-    
+        
+        if altura_float > 3:
+            altura_float = altura_float/100
+        
         imc = peso_float / (altura_float ** 2)
 
         os.system('cls')
