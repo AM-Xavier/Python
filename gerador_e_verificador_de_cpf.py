@@ -52,23 +52,23 @@ def generator():
     for i in range(9):
         nine_digits += str(random.randint(0,9))
     
-    backwards_counter_1 = 10
+    backwards_mult_1 = 10
     result_1 = 0
     
     for digit in nine_digits:
-        result_1 += int(digit) * backwards_counter_1
-        backwards_counter_1 -= 1
+        result_1 += int(digit) * backwards_mult_1
+        backwards_mult_1 -= 1
     
     first_digit = (result_1 * 10) % 11
     first_digit = 0 if first_digit == 10 else first_digit
     ten_digits = nine_digits + str(first_digit)
     
-    backwards_counter_2 = 11
+    backwards_mult_2 = 11
     result_2 = 0
     
     for digit in ten_digits:
-        result_2 += int(digit) * backwards_counter_2
-        backwards_counter_2 -= 1
+        result_2 += int(digit) * backwards_mult_2
+        backwards_mult_2 -= 1
     
     second_digit = (result_2 * 10) % 11
     second_digit = 0 if second_digit == 10 else second_digit
