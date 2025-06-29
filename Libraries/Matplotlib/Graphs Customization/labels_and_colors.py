@@ -13,5 +13,5 @@ ax.set_xlabel('Devices', fontsize='11')
 ax.set_ylabel('Number of users', fontsize='11')
 
 
-plt.bar(device_brands, user_numbers, color='red', width=1, edgecolor='white')
+plt.bar(device_brands, user_numbers, color=["red", "blue", "purple", "green", "cyan", "black"], width=1, edgecolor='white')
 plt.show()
