@@ -54,3 +54,17 @@ print(np.log2(x)) # Logarithm base 2
 print()
 print(np.log10(x)) # Logarithm base 10
 print()
+
+# Aggregate functions in numpy lists
+a = np.array([[1, 2, 3, 4, 5],
+            [6, 7, 8, 9, 10],
+            [11, 12, 13, 14, 15],
+            [16, 17, 18, 19, 20]])
+
+
+print(a.min()) # the minimum value in the list
+print(a.max()) # the maximum value in the list
+print(a.mean()) # the list mean
+print(a.std()) # the list standard deviation
+print(a.sum()) # the list sum
+print(np.median(a)) # the list median
