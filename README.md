@@ -1,6 +1,1 @@
-# Projects
-These are some subjects I'm currently studying.
-
-
-#  Projetos
-Esses são alguns dos assuntos que estou estudando no momento.
+These are some of the Python subjects I'm currently studying.
