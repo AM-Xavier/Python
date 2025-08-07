@@ -16,7 +16,7 @@ service = Service(executable_path=path)
 driver = webdriver.Chrome(options=options, service=service)
 driver.get(website)
 
-wait= WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 10)
 section = wait.until(EC.presence_of_element_located((By.ID, "tab_newreleases_content")))
 containers = section.find_elements(By.CLASS_NAME, "tab_item")
 
